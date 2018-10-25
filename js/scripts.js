@@ -13,10 +13,12 @@ var cryptoCalc = function(userString) {
   var userStringLength = userStringJoined.length;
   var squareRoot = Math.floor(Math.sqrt(userStringLength));
   //debugger;
+  //Creates Arrays based on squareRoot Value.
   for (x = 0;x <= squareRoot; x++) {
     this["cryptoArray"+x] = userStringJoined.slice(0,squareRoot);
     userStringJoined = userStringJoined.slice(squareRoot);
   };
+  // Adds the index[0] to output array of all arrays, then [1], then [1].
   while(counter <= squareRoot) {
     for (z = 0;z <= squareRoot; z++) {
       var tempCrypto = this["cryptoArray"+z];
@@ -25,7 +27,7 @@ var cryptoCalc = function(userString) {
     counter++;
   };
   outputCryptoArray = outputCryptoArray.join('').toLowerCase();
-
+  //Adds Spaces
   for (p=0;p <= (userStringLength/5);p++) {
     tempSplitArray = outputCryptoArray.slice(0,5);
     outputCryptoArray = outputCryptoArray.slice(5);

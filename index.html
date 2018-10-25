@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <head>
+    <title>Crytosquare</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="header">Cryptosquare</h1>
+      <div class="row">
+
+        <div class="col-md-6">
+          <form id="formInput">
+            <hr>
+            <div class="well" class="form-group">
+              <label id="labelText"for="userInput">Enter the string you would like to encrypt:</label>
+              <br>
+              <textarea id="userInput" type="text"></textarea>
+              <br>
+              <button type="submit" class="btn btn-success">Encrypt!</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-md-6">
+          <hr>
+          <div class="well" id="result">
+            <span id="userOutput"></span>
+          </div>
+        </div>
+
+        <hr>
+      </div>
+      <hr>
+    </div>
+  </body>
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/scripts.js"></script>
+</html>
